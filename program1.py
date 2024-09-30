@@ -23,8 +23,7 @@ class Solution:
         # Traverse every cell in the grid
         for r in range(rows):
             for c in range(cols):
-                # If we find a land ('L'), it means we found a new island
-                if grid[r][c] == 'L':
+                                if grid[r][c] == 'L':
                    
                     dfs(r, c)
                    
