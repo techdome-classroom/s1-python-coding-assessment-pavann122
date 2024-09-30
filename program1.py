@@ -23,8 +23,9 @@ class Solution:
         # Traverse every cell in the grid
         for r in range(rows):
             for c in range(cols):
-                                if grid[r][c] == 'L':
-                   
+                # If we find a land ('L'), it means we found a new island
+                if grid[r][c] == 'L':
+                    # Perform DFS to mark the entire island as visited
                     dfs(r, c)
                    
                     island_count += 1
