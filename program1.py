@@ -25,7 +25,7 @@ class Solution:
             for c in range(cols):
                 # If we find a land ('L'), it means we found a new island
                 if grid[r][c] == 'L':
-                    # Perform DFS to mark the entire island as visited
+                   
                     dfs(r, c)
                    
                     island_count += 1
