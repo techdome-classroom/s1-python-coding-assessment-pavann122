@@ -27,7 +27,7 @@ class Solution:
                 if grid[r][c] == 'L':
                     # Perform DFS to mark the entire island as visited
                     dfs(r, c)
-                    # Increment the island count
+                   
                     island_count += 1
 
         return island_count
